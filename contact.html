@@ -24,7 +24,10 @@
         <h2>Contact Us</h2>
         <p>If you have any questions, please fill out the form below:</p>
         
-        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+        <!-- <form action="https://formspree.io/f/{your_form_id}" method="POST"> -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="c40b8ce8-437e-4ec5-889c-73523ab376af">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
