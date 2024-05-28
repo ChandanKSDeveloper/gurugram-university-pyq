@@ -105,22 +105,7 @@ button {
 button:hover {
     background-color: hsl(180, 99%, 37%);
 
-}
-
-.telegram-link {
-    margin-top: 20px;
-}
-
-.telegram-link a {
-    color: var(--Cyan);
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.telegram-link a i {
-    margin-right: 8px;
-    font-size: 24px;
-}
+} 
 
 footer {
     text-align: center;
