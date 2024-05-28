@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+:root {
+    --Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Light_Gray: hsl(0, 0%, 98%);
+    --Cyan: hsl(180, 62%, 55%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--Light_Gray);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #E6E6FA;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                0 0 90px var(--Light_Gray),
+                0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--Cyan);
+    text-shadow: 0 0 5px darkblue;
+}
+
+header p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.semester {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                0 0 60px var(--Light_Gray),
+                0 0 10px rgba(0, 255, 255, 0.4);
+    overflow: hidden;
+}
+
+.semester h2 {
+    background-color: var(--Dark_Blue);
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.subject {
+    background-color: var(--Grayish_Blue);
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.subject p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.previousYear {
+    display: none;
+    padding: 10px 20px;
+    background-color: var(--Light_Gray);
+}
+
+.previousYear.visible {
+    display: flex;
+    flex-direction: column;
+}
+
+.previousYear a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: var(--Cyan);
+    /* color: white; */
+    color: var(--Dark_Blue);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+.previousYear a:hover {
+    background-color: hsl(180, 99%, 37%);
+
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the links */
+    margin-top: 10px;
+    
+
+}
+
+.copyright{
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    text-align: center;
+}
+.navigation a{
+    color: #007bff; /* Link color */
+    font-size: 16px; /* Adjust font size as needed */
+    display: flex;
+    align-items: center;
+
+
+}
+
+.navigation a i {
+    margin-right: 8; /* Space between icon and text */
+    font-size: 22px; /* Adjust icon size if needed */
+}
+
+.navigation a:hover {
+    color: #0056b3; /* Darker link color on hover */
+}
+
+.navigation a i:hover {
+    color: #0056b3; /* Darker icon color on hover */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .subject p {
+        font-size: 16px;
+    }
+
+    .previousYear a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+

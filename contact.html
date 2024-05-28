@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GU PYQ</title>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/contact-style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="nav-title">GU PYQ</h1>
+            <p class="title-fullform"> (Gurugram University)</p>
+        </div>
+    </header>
+
+    <!-- Contact Us Content -->
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to join our Telegram group, please fill out the form below or click the Telegram link to join our group directly.</p>
+        
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div class="telegram-link">
+            <p>Or join our Telegram group:</p>
+            <a href="https://t.me/joinchat/{your_telegram_group_link}" target="_blank"><i class="ri-telegram-line"></i> Join Us on Telegram</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GU PYQ. All rights reserved.</p>
+        <div class="navigation">
+            <a href="./about.html"><i class="ri-information-line"></i>About Us</a>
+            <a href="./index.html"><i class="ri-home-4-line"></i> Home</a>
+        </div>
+    </footer>
+</body>
+</html>

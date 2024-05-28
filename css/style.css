@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --cyan: hsl(180, 62%, 55%);
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+header {
+    background-color: var(--cyan);
+    color: white;
+}
+
+.web-title {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--cyan);
+}
+
+/* Increased spacing between navbar-brand and navbar-nav */
+.navbar {
+    padding: 0 20px;
+}
+
+.navbar-nav {
+    margin-left: auto; /* This pushes the navbar items to the right */
+    margin-right: 10vw;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increased font size for nav items */
+    font-weight: 500;
+    color: var(--dark-color);
+    transition: color 0.3s ease;
+    padding: 10px 15px; /* Increased padding for larger clickable area */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--cyan);
+}
+
+.hero {
+    background: linear-gradient(to right, var(--cyan), var(--secondary-color));
+    color: white;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: var(--light-color);
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .web-title {
+        font-size: 2.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+    }
+}
